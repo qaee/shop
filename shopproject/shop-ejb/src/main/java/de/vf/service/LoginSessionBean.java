@@ -5,14 +5,14 @@ import javax.annotation.PreDestroy;
 import javax.ejb.PostActivate;
 import javax.ejb.PrePassivate;
 import javax.ejb.Stateful;
-import javax.persistence.PrePersist;
+import javax.ejb.Stateless;
 
 import de.vf.model.User;
 
 /**
  * Session Bean implementation class LoginSessionBean
  */
-@Stateful
+@Stateless
 public class LoginSessionBean implements LoginSession{
 
 	/**
@@ -26,15 +26,6 @@ public class LoginSessionBean implements LoginSession{
 		System.out.println("post Construct ************************************ ");
 	}
 	
-	@PrePassivate
-	private void passivate() {
-		System.out.println("post passivate ************************************ ");
-	}
-	
-	@PostActivate
-	private void activate() {
-		System.out.println("post activate ************************************ ");
-	}
 	
 	@PreDestroy
 	private void preDestory() {

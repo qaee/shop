@@ -18,9 +18,6 @@ public class LoginBean {
 	@EJB 
 	LoginSession login;
 	
-	@EJB
-	FeatureBookLocal featureBook;
-	
 	public void actionLogin() {
 			login.setUser(user);
 		
@@ -35,6 +32,6 @@ public class LoginBean {
 	}
 	
 	public Book getBook() {
-		return featureBook.getFeaturedBook();
+		return new Book();
 	}
 }

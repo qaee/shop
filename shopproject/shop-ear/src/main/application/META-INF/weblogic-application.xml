@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<weblogic-application
+	xmlns="http://xmlns.oracle.com/weblogic/weblogic-application"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/javaee_5.xsd
+						http://xmlns.oracle.com/weblogic/weblogic-application http://xmlns.oracle.com/weblogic/weblogic-application/1.5/weblogic-application.xsd">
+	<prefer-application-packages>
+		<package-name>com.sun.jersey.*</package-name>
+		<package-name>com.sun.research.ws.wadl.*</package-name>
+		<package-name>com.sun.ws.rs.ext.*</package-name>
+		<package-name>org.codehaus.jackson.*</package-name>
+		<package-name>org.codehaus.jettison.*</package-name>
+		<package-name>javax.ws.rs.*</package-name>
+		<package-name>org.objectweb.asm.*</package-name>
+	</prefer-application-packages>
+
+</weblogic-application>

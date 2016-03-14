@@ -2,12 +2,12 @@ package de.vf.service;
 
 import java.io.Serializable;
 
-import javax.ejb.Remote;
+import javax.ejb.Local;
 
 import de.vf.model.User;
 
-@Remote
-public interface LoginSession extends Serializable{
+@Local
+public interface LoginSession {
 
 	User getUser();
 	void setUser(User u);
